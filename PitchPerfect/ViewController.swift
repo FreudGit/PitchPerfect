@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblRecording: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any ad   ditional setup after loadsssing the view, typically from a nib.
+        // Do any ad   ditional setup after loadsss   ing the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
