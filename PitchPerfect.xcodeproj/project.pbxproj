@@ -12,6 +12,7 @@
 		0F3E7EA61E7D9F0500AD0A04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3E7EA41E7D9F0500AD0A04 /* Main.storyboard */; };
 		0F3E7EA81E7D9F0500AD0A04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3E7EA71E7D9F0500AD0A04 /* Assets.xcassets */; };
 		0F3E7EAB1E7D9F0500AD0A04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3E7EA91E7D9F0500AD0A04 /* LaunchScreen.storyboard */; };
+		0FB505D31E7EE4D600F51CBD /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB505D21E7EE4D600F51CBD /* PlaySoundsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0F3E7EA71E7D9F0500AD0A04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3E7EAA1E7D9F0500AD0A04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F3E7EAC1E7D9F0500AD0A04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB505D21E7EE4D600F51CBD /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySoundsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0F3E7EA71E7D9F0500AD0A04 /* Assets.xcassets */,
 				0F3E7EA91E7D9F0500AD0A04 /* LaunchScreen.storyboard */,
 				0F3E7EAC1E7D9F0500AD0A04 /* Info.plist */,
+				0FB505D21E7EE4D600F51CBD /* PlaySoundsViewController.swift */,
 			);
 			path = PitchPerfect;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3E7EA31E7D9F0500AD0A04 /* ViewController.swift in Sources */,
+				0FB505D31E7EE4D600F51CBD /* PlaySoundsViewController.swift in Sources */,
 				0F3E7EA11E7D9F0500AD0A04 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +306,7 @@
 				0F3E7EB11E7D9F0500AD0A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
