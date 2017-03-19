@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,7 +80,46 @@
                     <view key="view" contentMode="scaleToFill" id="kZS-wt-o3N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9C9-NM-7LM">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z5R-5y-txm">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="301.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNp-7f-za0" userLabel="Fast">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="301.5"/>
+                                                <state key="normal" image="Fast"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZk-tC-w2g" userLabel="Slow">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="301.5"/>
+                                                <state key="normal" image="Slow"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sU7-XZ-HAo">
+                                        <rect key="frame" x="0.0" y="301.5" width="343" height="301.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxZ-bh-7KB" userLabel="Slow">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="301.5"/>
+                                                <state key="normal" image="HighPitch"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4H-i7-z89" userLabel="Fast">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="301.5"/>
+                                                <state key="normal" image="LowPitch"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fyq-Yt-ZHe" firstAttribute="top" secondItem="9C9-NM-7LM" secondAttribute="bottom" id="CtM-Mw-bJV"/>
+                            <constraint firstItem="9C9-NM-7LM" firstAttribute="top" secondItem="QQC-M7-7Id" secondAttribute="bottom" id="Pn1-o6-7ba"/>
+                            <constraint firstItem="9C9-NM-7LM" firstAttribute="leading" secondItem="kZS-wt-o3N" secondAttribute="leadingMargin" id="fH7-bP-tRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9C9-NM-7LM" secondAttribute="trailing" id="gjF-dU-O4d"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rc1-bk-LIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -106,7 +146,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Fast" width="90" height="90"/>
+        <image name="HighPitch" width="90" height="90"/>
+        <image name="LowPitch" width="90" height="90"/>
         <image name="Record" width="155" height="155"/>
+        <image name="Slow" width="90" height="90"/>
         <image name="Stop" width="155" height="155"/>
     </resources>
 </document>
